@@ -3,7 +3,7 @@
  * Author: Yifan Chen (ethanyc216@gmail.com)
  * Feb 28th, 2020
  * Q5 in SQLite
- * Link: https://ideone.com/alMkUL
+ * Link: https://ideone.com/iGf8me
  */
 
 -- create table
@@ -31,17 +31,23 @@ INSERT INTO Instructors VALUES ('Emscr', 'Python');
 .header on
 .mode column
 -- query
--- The query will count how many languages instructors can teach in the range of ('JavaScript', 'Scratch', 'Python'). And then only show instructors who can teach 3 languages. (Note here, becase there are no repeated rows in TABLE Instructors.) 
+-- The query will select instructors who can teach 'JavaScript', 'Scratch' and 'Python' individually. Now we have three sets, and then do the intersect on those three sets. Now we have our final answer for the query.
 SELECT Instructor
-FROM (SELECT DISTINCT Instructor, count(ins1.Subject) AS Num
-	  FROM Instructors ins1
-	  WHERE ins1.Subject IN ('JavaScript', 'Scratch', 'Python')
-	  GROUP BY ins1.Instructor)
-WHERE NUM=3;
+FROM Instructors
+WHERE Subject='JavaScript'
+INTERSECT
+SELECT Instructor
+FROM Instructors
+WHERE Subject='Scratch'
+INTERSECT
+SELECT Instructor
+FROM Instructors
+WHERE Subject='Python';
 /*
 -- Note: 
-If you need more subjects or change the subjects, you will have to add more or change subjects in:
-WHERE ins1.Subject IN ('JavaScript', 'Scratch', 'Python', 'More_Subject_Name')
-
-And also, you will have to change 'WHERE NUM=3' to the total number of the subject you want like 'WHERE NUM=4' in the above example.
+If you need more subjects or change the subjects, you will have to add more following pattern or change the following pattern to your subjects:
+INTERSECT
+SELECT Instructor
+FROM Instructors
+WHERE Subject='More_Subject_Name'
  */

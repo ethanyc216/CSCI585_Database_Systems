@@ -37,3 +37,8 @@ FROM Instructors ins
 WHERE EXISTS (SELECT * FROM Instructors ins1 WHERE ins.Instructor=ins1.Instructor AND ins1.Subject='JavaScript') AND
       EXISTS (SELECT * FROM Instructors ins2 WHERE ins.Instructor=ins2.Instructor AND ins2.Subject='Scratch') AND
       EXISTS (SELECT * FROM Instructors ins3 WHERE ins.Instructor=ins3.Instructor AND ins3.Subject='Python');
+/*
+-- Note: 
+If you need more subjects or change the subjects, you will have to add more following pattern or change the following pattern to your subjects:
+EXISTS (SELECT * FROM Instructors ins4 WHERE ins.Instructor=ins4.Instructor AND ins4.Subject='More_Subject_Name') AND
+ */
