@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+
+<Folder><name>Libraries</name>
+<Placemark><name>Doheny Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283860,34.020061</coordinates></Point>
+</Placemark>
+<Placemark><name>Leavey Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282727,34.021670</coordinates></Point>
+</Placemark>
+<Placemark><name>VKC Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283905,34.021287</coordinates></Point>
+</Placemark>
+<Placemark><name>Wilson Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286185,34.023943</coordinates></Point>
+</Placemark>
+<Placemark><name>Hoose Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286628,34.018710</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Folder><name>Cafes</name>
+<Placemark><name>Tutor Hall Café</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.289993,34.020043</coordinates></Point>
+</Placemark>
+<Placemark><name>Law School Cafe</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284422,34.018700</coordinates></Point>
+</Placemark>
+<Placemark><name>Literatea Cafe</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283395,34.020149</coordinates></Point>
+</Placemark>
+<Placemark><name>Little Galen</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.287075,34.022879</coordinates></Point>
+</Placemark>
+<Placemark><name>Cammereli Cafe</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283814,34.019091</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Folder><name>Waterworks</name>
+<Placemark><name>AGC fountain</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.290667,34.020238</coordinates></Point>
+</Placemark>
+<Placemark><name>Argue fountain</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283372,34.020426</coordinates></Point>
+</Placemark>
+<Placemark><name>Law Fountain</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284928,34.018991</coordinates></Point>
+</Placemark>
+<Placemark><name>Generations...</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283225,34.022209</coordinates></Point>
+</Placemark>
+<Placemark><name>Founders...</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283941,34.022434</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Placemark><name>The Pentagon</name>
+<Polygon>
+<extrude>1</extrude>
+<altitudeMode>absolute</altitudeMode>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+-118.284422,34.0187,100 
+-118.286628,34.01871,100 
+-118.290667,34.020238,100 
+-118.286185,34.023943,100 
+-118.283225,34.022209,100 
+-118.282727,34.02167,100 
+-118.283814,34.019091,100 
+-118.284422,34.0187,100 
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+
+<Placemark><name>1st</name>
+<LineString>
+<coordinates>
+-118.283225,34.022209,0
+-118.282727,34.021670,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark><name>2nd</name>
+<LineString>
+<coordinates>
+-118.283225,34.022209,0
+-118.283941,34.022434,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark><name>3rd</name>
+<LineString>
+<coordinates>
+-118.283225,34.022209,0
+-118.283905,34.021287,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark><name>4th</name>
+<LineString>
+<coordinates>
+-118.283225,34.022209,0
+-118.283372,34.020426,0
+</coordinates>
+</LineString>
+</Placemark>
+
+</Document></kml>
