@@ -7,10 +7,10 @@ r=1
 a=4
 pi = math.pi
 
-def spirograph(t, loc, R=5.0, r=1.0, a=4.0):
+def spirograph(t, loc, R=5.0, r=1.0, a=4.0, s=0.0001):
     lon, lat = loc
-    lat += (R+r)*math.cos((r/R)*t)-a*math.cos((1+r/R)*t)
-    lon += (R+r)*math.sin((r/R)*t)-a*math.sin((1+r/R)*t)
+    lat += ((R+r)*math.cos((r/R)*t)-a*math.cos((1+r/R)*t))*s
+    lon += ((R+r)*math.sin((r/R)*t)-a*math.sin((1+r/R)*t))*s
     return lon, lat
 
 f = open('spiro.kml', 'w')
