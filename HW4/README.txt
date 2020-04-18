@@ -16,7 +16,7 @@ Q1:
     There are 12 terms are in the equation. Because only CRIM, ZN, CHAS (when is 1), NOX, RM, DIS, RAD, TAX, PTRATIO, B and LSTAT factors contribute to MEDV. In other words, INDUS and AGE are not important when predicting MEDV. And we should also see that some factors have bad impacts on MEDV, like CRIM, NOX, DIS, TAX, PTRATIO and LSTAT. The higher those factors are, the smaller MEDV would be. Most of those factors impact the median home price have straight forward meanings like crime rate (most people dont want to live in a high crime rate area), nitric oxides concentration (health concern) etc. Also, with the default configuration that linear regression achieves an RMSE of 4.9. See screenshot Q1.png.
 
 Q2:
-    The lowest RMSE I was able to achieve is 2.5648 with L=0.1 and M=0.15. See screenshots Q2.1.png and Q2.2.png.
+    The lowest RMSE I was able to achieve is 2.5648 with L=0.1 and M=0.15. See screenshots Q2a.png and Q2b.png.
 
 
 KNIME
